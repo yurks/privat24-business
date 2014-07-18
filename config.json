@@ -1,0 +1,10 @@
+{
+	"port": 8081,
+	"p24": {
+		"host": "client-bank.privatbank.ua",
+		"port": 443,
+		"path": {
+			"statements": "/p24/c2bstatements"
+		}
+	}
+}

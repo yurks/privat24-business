@@ -1,0 +1,36 @@
+extends layout
+block content
+
+    div.container-fluid
+        nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
+            div.navbar-header
+                a.navbar-brand=name
+            form#form.navbar-form.navbar-left(role="search", method="post")
+                div.form-group
+                    div.input-group.input-group-sm
+                        span.input-group-addon
+                            span.glyphicon.glyphicon-user
+                        input.form-control(type="text" placeholder="login" name="UserName")
+                        input.form-control(type="password" placeholder="password" name="UserPass")
+                    div.input-group
+                    div#datepicker.input-group.input-group-sm.input-daterange
+                        span.input-group-addon
+                            span.glyphicon.glyphicon-calendar
+                        input.form-control(type="text" name="stdate" value=current_month)
+                        span.input-group-addon to
+                        input.form-control(type="text" name="endate" value=current_date)
+                        span.input-group-btn
+                            button#request.btn.btn-default.ladda-button(type="submit" data-style="zoom-in")
+                                span.ladda-label Go!
+            form.navbar-form.navbar-right
+                div.form-group
+                    div#table-filter.input-group.input-group-sm
+
+        table.display#table(width='100%',cellspacing='0')
+
+        div#alert.alert.alert-warning.alert-dismissible(role="alert")
+            button#alert-close.close(type="button")
+                span(aria-hidden="true") &times;
+                span.sr-only Close
+            strong#alert-intro
+            span#alert-message

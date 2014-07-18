@@ -1,0 +1,45 @@
+{
+    "name": "privat24-business",
+    "version": "0.0.1",
+    "description": "Simple application for accessing your account statements from Privat24 online-banking for business clients.",
+    "keywords": [
+        "bank",
+        "banking",
+        "money",
+        "privatbank",
+        "privat24"
+    ],
+    "author": "Yurk Sha (http://yurks.github.io)",
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/yurks/privat24-business/blob/master/LICENSE"
+        }
+    ],
+    "license": "MIT",
+    "main": "./lib/privat24-business.js",
+    "bin": "./bin/privat24-business.js",
+    "homepage": "https://github.com/yurks/privat24-business",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yurks/privat24-business.git"
+    },
+    "bugs": {
+        "url": "https://github.com/yurks/privat24-business/issues"
+    },
+    "dependencies": {
+        "body-parser": "~1.4.3",
+        "bower": "~1.3.8",
+        "config.json": "0.0.3",
+        "express": "~4.6.1",
+        "jade": "~1.3.1",
+        "moment": "~2.7.0",
+        "open": "0.0.5",
+        "xml2js": "~0.4.4"
+    },
+    "scripts": {
+        "start": "node server.js",
+        "postinstall": "node_modules/.bin/bower install"
+    },
+    "engine": "node >= 0.6.6"
+}
