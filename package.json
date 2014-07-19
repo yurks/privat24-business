@@ -1,6 +1,6 @@
 {
     "name": "privat24-business",
-    "version": "0.0.3",
+    "version": "0.0.1",
     "description": "Simple application for accessing your account statements from Privat24 online-banking for business clients.",
     "keywords": [
         "bank",
