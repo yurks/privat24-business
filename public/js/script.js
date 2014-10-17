@@ -87,7 +87,7 @@
                         .appendTo(this.$filter);
                 }
 
-                this.entity = this.$container.DataTable({
+                var entity = this.entity = this.$container.DataTable({
                     data: rows,
                     paging:   false,
                     order: [[1, 'desc']],
@@ -120,6 +120,16 @@
                         }}
                     ]
                 });
+
+                this.$container.children('tbody').on('click', 'tr', function() {
+                    if ( $(this).hasClass('selected') ) {
+                        $(this).removeClass('selected');
+                    }
+                    else {
+                        entity.$('tr.selected').removeClass('selected');
+                        $(this).addClass('selected');
+                    }
+                } );
             },
 
             hide: function() {
