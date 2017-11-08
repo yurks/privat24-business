@@ -154,7 +154,7 @@
                             var out = {};
                             if (!col) {
                                 out.title = 'Всі контрагенти<br><b>' + (Object.keys(summary.total || {}).map(function(ccy) {
-                                    return (summary.total[ccy].in || 0) + ' ' + ccy + ' / '+ (summary.total[ccy].out || 0) + ' ' + ccy;
+                                    return (summary.total[ccy].in || 0) + ' '+ (summary.total[ccy].out || 0) + ' = ' + ((summary.total[ccy].in || 0) + (summary.total[ccy].out || 0)).toFixed(2) + ' ' + ccy ;
                                 }).join('<br>')) + '</b>';
 
                                 out.render = function(data, type) {
