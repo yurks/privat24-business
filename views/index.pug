@@ -16,9 +16,9 @@ block content
                     div#datepicker.input-group.input-group-sm.input-daterange
                         span.input-group-addon
                             span.glyphicon.glyphicon-calendar
-                        input.form-control(type="text" name="stdate" value=current_month)
+                        input.form-control(type="text" placeholder="month" name="stdate" readonly value=current_month)
                         span.input-group-addon to
-                        input.form-control(type="text" name="endate" value=current_date)
+                        input.form-control(type="text" placeholder="month" name="endate" readonly value=current_date)
                         span.input-group-btn
                             button#request.btn.btn-default.ladda-button(type="submit" data-style="zoom-in")
                                 span.ladda-label Go!
@@ -26,7 +26,15 @@ block content
                 div.form-group
                     div#table-filter.input-group.input-group-sm
 
+
+        ul#tabs.nav.nav-tabs
+
         table.display#table(width='100%',cellspacing='0')
+
+        table.display#rests(width='100%',cellspacing='0')
+
+        table.display#summary(width='100%',cellspacing='0')
+
 
         div#alert.alert.alert-warning.alert-dismissible(role="alert")
             button#alert-close.close(type="button")

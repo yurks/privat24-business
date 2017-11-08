@@ -1,20 +1,24 @@
 body { padding: 70px 0 10px; }
 
 .navbar {min-width: 1220px; }
-.navbar-brand { background: url('../img/logo.png') no-repeat 50% 50%; text-align: left; text-indent: -9999px; width: 58px;}
+.navbar-brand { background: url('./logo.png') no-repeat 50% 50%; text-align: left; text-indent: -9999px; width: 58px;}
 .navbar-form .input-group  {margin-left: 10px;}
 .navbar-form .input-group:first-child  {margin-left: 0;}
-.navbar-form .input-group .form-control {margin-right: -1px;}
+.navbar-form .input-group .form-control {margin-right: -1px; text-align: left;}
 .navbar-form .input-group-addon:first-child { padding-left:10px; padding-right: 8px; border-left-width: 1px;}
-.navbar-left .form-control {border-radiu2s: 0!important; width: 100px!important;}
+.navbar-left .form-control {width: 100px!important;  background-color: #fff;}
+.navbar-left .form-control[name=range] {width: 130px!important;}
 .navbar-form.navbar-right:last-child { margin-right: 0;}
 .navbar-right .form-control {width: auto!important;}
 
 .dataTables_wrapper { font-size: 10px}
 table.dataTable tbody tr:hover { background-color: #fdffe0!important;}
 table.dataTable thead th, table.dataTable thead td { border-bottom: 2px solid #ddd;}
+table.dataTable thead th { font-weight: normal;}
+table.dataTable thead th b { display: block; border-top: 1px solid #ddd; padding: 2px 0 0; margin: 2px 15px 0 0;}
 table.dataTable.no-footer { border-bottom: 2px solid #ddd; }
 
+#table-filter select { width: 140px!important; }
 
 .ladda-button {background-color: #eee}
 .ladda-button.disabled, .ladda-button[disabled],
@@ -41,3 +45,14 @@ select.form-control option[value=""] {color: #999;}
 .form-control:-ms-input-placeholder { /* Internet Explorer 10+ */
     color:    #999;
 }
+.navbar-form { margin-top: 10px; }
+
+
+#tabs:empty { display: none;}
+.dataTables_wrapper  { display: none;}
+.navbar-form.navbar-right { display: none;}
+
+[tab=table] #table_wrapper { display: block;}
+[tab=table] .navbar-form.navbar-right { display: block;}
+[tab=rests] #rests_wrapper { display: block;}
+[tab=summary] #summary_wrapper { display: block;}

@@ -1,10 +1,23 @@
 {
 	"port": 8081,
 	"p24": {
-		"host": "client-bank.privatbank.ua",
-		"port": 443,
-		"path": {
-			"statements": "/p24/c2bstatements"
+		"statements": {
+			"hostname": "client-bank.privatbank.ua",
+			"port": 443,
+			"method": "POST",
+			"path": "/p24/c2bstatements",
+			"headers": {
+				"Content-Type": "application/x-www-form-urlencoded"
+			}
+		},
+		"rest": {
+			"hostname": "client-bank.privatbank.ua",
+			"port": 443,
+			"method": "POST",
+			"path": "/p24/c2brest",
+			"headers": {
+				"Content-Type": "application/x-www-form-urlencoded"
+			}
 		}
 	}
 }
