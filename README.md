@@ -9,13 +9,13 @@ It use an open Privat24 API and allow you to easily manage your statements witho
 
 You need to install [node.js](http://nodejs.org) first. Once you have it, install `privat24-business` with command:
 
-    npm install privat24-business -g
+    npm install p24b -g
 
 This will install application globally so that it may be run from the command line.
 
 ## Usage:
 
-    privat24-business [options]
+    p24b [options]
 
 Once successfully started, the application will be available on the host computer at `http://127.0.0.1:8081`
 and your default browser will start with this url.
