@@ -1,6 +1,6 @@
 {
     "name": "p24b",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "description": "Simple application for accessing your account statements from Privat24 online-banking for business clients.",
     "keywords": [
         "bank",
@@ -17,8 +17,8 @@
         }
     ],
     "license": "MIT",
-    "main": "./lib/privat24-business.js",
-    "bin": "./bin/privat24-business.js",
+    "main": "./lib/index.js",
+    "bin": "./bin/p24b.js",
     "homepage": "https://github.com/yurks/privat24-business",
     "repository": {
         "type": "git",
